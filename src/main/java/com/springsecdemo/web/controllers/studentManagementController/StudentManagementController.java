@@ -28,7 +28,6 @@ public class StudentManagementController {
     @PostMapping
     @PreAuthorize("hasAuthority('student:write')")
     public void registerNewStudent(@RequestBody Student student){
-//        log.info(String.valueOf(student));
         log.info("new students --> {}", student);
     }
 
